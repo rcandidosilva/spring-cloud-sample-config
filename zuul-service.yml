@@ -11,18 +11,9 @@ endpoints:
 
 zuul:
   routes:
-    cadastro:
-      path: /**
-      serviceId: API-SERVER
-    doc:
-      path: /core/**
-      serviceId: CORE-SERVER
     gft:
-      path: /batch/**
-      serviceId: BATCH-SERVER
+      path: /product/**
+      serviceId: PRODUCT-SERVICE
     security:
       path: /security/**
-      serviceId: SECURITY-SERVER
-    jobs:
-      path: /workflow/**
-      serviceId: WORKFLOW-SERVER
+      serviceId: SECURITY-SERVICE
