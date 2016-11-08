@@ -1,5 +1,10 @@
 server:
-  port: ${PORT:8081}
+  port: ${PORT:9999}
+  contextPath: /uaa
+
+security:
+  user:
+    password: password
 
 logging:
   level:
