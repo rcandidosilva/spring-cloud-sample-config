@@ -14,9 +14,13 @@ security:
     password: user
   ignored: /,/favicon.ico,/index.html,/js/**,/css/**,/webjars/**
   sessions: ALWAYS
-    oauth2:
-      sso:
-        loginPath: /login
+  oauth2:
+    sso:
+      loginPath: /login
+    client:
+      accessTokenUri: http://localhost:9999/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
+
 management:
   security:
     role: HERO
