@@ -9,6 +9,24 @@ endpoints:
   health:
     sensitive: false
 
+security:
+  user:
+    password: password
+
+spring:
+  oauth2:
+    sso:
+      home:
+        secure: false
+        path: /,/**/*.html
+    client:
+      accessTokenUri: http://localhost:9999/uaa/oauth/token
+      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
+      clientId: acme
+      clientSecret: acmesecret
+    resource:
+      userInfoUri: http://localhost:9999/uaa/user
+
 zuul:
   routes:
     gft:
@@ -17,3 +35,6 @@ zuul:
     security:
       path: /security/**
       serviceId: SECURITY-SERVICE
+    user:
+      path: /user/**
+      url: http://localhost:9999/uaa/user
