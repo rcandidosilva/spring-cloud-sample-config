@@ -4,7 +4,7 @@ server:
 
 security:
   user:
-    password: user
+    password: password
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
 
 logging:

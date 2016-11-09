@@ -11,7 +11,7 @@ endpoints:
 
 security:
   user:
-    password: user
+    password: password
   ignored: /,/favicon.ico,/index.html,/js/**,/css/**,/webjars/**
   sessions: ALWAYS
   oauth2:
