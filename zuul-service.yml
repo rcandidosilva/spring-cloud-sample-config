@@ -34,10 +34,6 @@ security:
       id: openid
       serviceId: ${PREFIX:}resource
 
-management:
-  security:
-    role: HERO
-
 zuul:
   routes:
     gft:
@@ -46,6 +42,3 @@ zuul:
     security:
       path: /security/**
       serviceId: SECURITY-SERVICE
-    user:
-      path: /user/**
-      url: http://localhost:9999/uaa/user

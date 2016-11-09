@@ -5,7 +5,7 @@ logging:
   level:
     org.springframework.web: DEBUG
 
-spring:
+security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9999/uaa/user
