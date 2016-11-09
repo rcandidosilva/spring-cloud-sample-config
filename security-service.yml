@@ -6,12 +6,6 @@ security:
   user:
     password: user
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
-  oauth2:
-    client:
-      clientId: acme
-      clientSecret: acmesecret
-      authorized-grant-types: authorization_code,refresh_token,password,implicit
-      scope: openid
 
 logging:
   level:
