@@ -16,21 +16,10 @@ security:
   sessions: ALWAYS
   oauth2:
     sso:
-      loginPath: /login
-    client:
-      accessTokenUri: http://localhost:9999/uaa/oauth/token
-      userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
-
-management:
-  security:
-    role: HERO
-
-spring:
-  oauth2:
-    sso:
       home:
         secure: false
         path: /,/**/*.html
+      loginPath: /login
     client:
       accessTokenUri: http://localhost:9999/uaa/oauth/token
       userAuthorizationUri: http://localhost:9999/uaa/oauth/authorize
@@ -44,6 +33,10 @@ spring:
           -----END PUBLIC KEY-----
       id: openid
       serviceId: ${PREFIX:}resource
+
+management:
+  security:
+    role: HERO
 
 zuul:
   routes:
