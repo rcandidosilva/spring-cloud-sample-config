@@ -15,8 +15,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://eureka-service:8761/eureka/
-
-spring:
-  oauth2:
-    resource:
-      userInfoUri: http://localhost:9999/uaa/user
