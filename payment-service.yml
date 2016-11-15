@@ -16,8 +16,8 @@ feign:
 
 hystrix:
   shareSecurityContext: true
-#  command:
-#    default:
-#      execution:
-#        isolation:
-#          strategy: SEMAPHORE
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
