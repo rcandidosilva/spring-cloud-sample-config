@@ -41,7 +41,8 @@ zuul:
     product:
       path: /product/**
       serviceId: PRODUCT-SERVICE
-    security-service:
+    security:
       path: /uaa/**
       stripPrefix: false
+      serviceId: SECURITY-SERVICE
   add-proxy-headers: true
