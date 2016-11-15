@@ -9,3 +9,7 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9999/uaa/user
+
+feign:
+  hystrix:
+    enabled: false
