@@ -38,13 +38,11 @@ security:
 
 zuul:
   routes:
+    security:
+      path: /uaa/**
+      stripPrefix: false
+      serviceId: SECURITY-SERVICE
     product:
       path: /product/**
       serviceId: PRODUCT-SERVICE
-    security:
-      path: /uaa/**
-      prefix: /uaa
-      #stripPrefix: false
-      serviceId: SECURITY-SERVICE
-      #url: http://localhost:9999/uaa/
   add-proxy-headers: true
