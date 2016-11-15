@@ -45,4 +45,10 @@ zuul:
     product:
       path: /product/**
       serviceId: PRODUCT-SERVICE
+    customer:
+      path: /customer/**
+      serviceId: CUSTOMER-SERVICE
+    payment:
+      path: /payment/**
+      serviceId: PAYMENT-SERVICE
   add-proxy-headers: true
