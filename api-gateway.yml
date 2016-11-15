@@ -10,10 +10,8 @@ endpoints:
     sensitive: false
 
 security:
-  user:
-    password: password
-  ignored: /,/favicon.ico,/index.html,/js/**,/css/**,/webjars/**
-  sessions: ALWAYS
+  basic:
+    enabled: false
   oauth2:
     sso:
       home:
@@ -40,5 +38,7 @@ zuul:
       path: /product/**
       serviceId: PRODUCT-SERVICE
     security:
-      path: /security/**
-      serviceId: SECURITY-SERVICE
+      sensitiveHeaders:
+      stripPrefix: false
+      path: /uaa/**
+  add-proxy-headers: true
