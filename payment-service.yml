@@ -12,4 +12,12 @@ security:
 
 feign:
   hystrix:
-    enabled: false
+    enabled: true
+
+hystrix:
+  shareSecurityContext: true
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          strategy: SEMAPHORE
