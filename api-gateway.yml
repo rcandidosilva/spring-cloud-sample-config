@@ -38,12 +38,10 @@ security:
 
 zuul:
   routes:
-    gft:
+    product:
       path: /product/**
       serviceId: PRODUCT-SERVICE
-    security:
-      sensitiveHeaders:
-#      stripPrefix: false
+    security-service:
       path: /uaa/**
-      serviceId: SECURITY-SERVICE
+      stripPrefix: false
   add-proxy-headers: true
