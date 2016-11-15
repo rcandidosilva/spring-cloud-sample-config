@@ -41,4 +41,5 @@ zuul:
       sensitiveHeaders:
       stripPrefix: false
       path: /uaa/**
+      serviceId: SECURITY-SERVICE
   add-proxy-headers: true
