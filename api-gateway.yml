@@ -43,7 +43,7 @@ zuul:
       serviceId: PRODUCT-SERVICE
     security:
       sensitiveHeaders:
-      stripPrefix: false
+#      stripPrefix: false
       path: /uaa/**
       serviceId: SECURITY-SERVICE
   add-proxy-headers: true
