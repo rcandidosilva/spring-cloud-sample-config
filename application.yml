@@ -33,7 +33,6 @@ hystrix:
           strategy: SEMAPHORE
 
 ---
-
 spring:
   profiles: docker
 
