@@ -6,7 +6,3 @@ security:
   user:
     password: password
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
-
-logging:
-  level:
-    org.springframework.web: DEBUG

@@ -1,11 +1,17 @@
 server:
   port: ${PORT:8084}
 
-logging:
-  level:
-    org.springframework.web: DEBUG
-
 security:
   oauth2:
     resource:
       userInfoUri: http://localhost:9999/uaa/user
+
+---
+
+spring:
+  profiles: docker
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://security:9999/uaa/user
