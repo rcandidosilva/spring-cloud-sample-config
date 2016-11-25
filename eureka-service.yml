@@ -19,11 +19,11 @@ spring:
 
 eureka:
   instance:
-    hostname: eureka
+    hostname: eureka-service
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://eureka:8761/eureka/
+      defaultZone: http://eureka-service:8761/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 0
