@@ -28,7 +28,8 @@ zuul:
 ---
 spring:
   profiles: docker
-  security:
-    oauth2:
-      resource:
-        userInfoUri: http://security-service:9999/uaa/user
+
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://security-service:9999/uaa/user
