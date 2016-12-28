@@ -2,10 +2,25 @@ server:
   port: ${PORT:8082}
 
 spring:
+
+  datasource:
+    url: jdbc:h2:mem:customerdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
   jpa:
     generate-ddl: true
+    database: H2
     hibernate:
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
       ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
 
 security:
   oauth2:
