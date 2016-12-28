@@ -1,6 +1,11 @@
 server:
   port: ${PORT:8082}
 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create
+
 security:
   oauth2:
     resource:

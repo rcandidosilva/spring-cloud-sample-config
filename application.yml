@@ -38,6 +38,11 @@ spring:
   zipkin:
     baseUrl: http://zipkin-service:9411
 
+logging:
+  level: warn
+  logstash:
+    host: logstash
+
 eureka:
   client:
     serviceUrl:
